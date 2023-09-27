@@ -9,5 +9,25 @@
 
 \begin{document}
 \maketitle
+\tableofcontents
 
+\section{Some basic concepts}
+To manipulate currents externally, we generally need to create a gradient, which generates an electric field which can be controlled externally
+
+Band gap in Si $=1.12 eV$\\
+$\Rightarrow \text{For Silicon to function as a semiconductor, } \frac{1}{2}k_{B} T\geq 1.12 eV$\\
+
+where $k_B$ is the Boltzmann constant.
+
+In a simple p-n junction, the p-n junction is a metallurgical junction, and at thermal equilibrium, it forms a depletion layer, which results in a built-in potential $V_{bi}$, due to a distribution of charge. 
+
+If the p-side is doped with $N_a$ acceptor atoms($cm^{-3}$) and the n-side is doped with $N_d$ donor atoms($cm^{-3}$), then:
+\begin{equation}
+    V_{bi}=\frac{k_B T}{q}\ln(\frac{N_a N_d}{n_{i}^{2}})
+\end{equation}
+which at $T\approx 300 K$:
+\begin{itemize}
+    \item $V_T$ called the thermal voltage $q=e=1.6*10^{-19}$, $$V_T=\frac{k_B T}{q}\approx 26mV$$. 
+    \item $n_i=1.35*10^{10}\approx 10^{10} cm^{-3}$
+\end{itemize}
 \end{document}
