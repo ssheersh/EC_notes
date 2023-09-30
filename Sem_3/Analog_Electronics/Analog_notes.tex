@@ -1,7 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage{amsmath}
-\usepackage{amssymb}
-
+\usepackage{header}
 \author{Samyak Sheersh}
 \date{\today}
 \title{Analog Electronics Notes}
@@ -30,4 +28,37 @@ which at $T\approx 300 K$:
     \item $V_T$ called the thermal voltage $q=e=1.6*10^{-19}$, $$V_T=\frac{k_B T}{q}\approx 26mV$$. 
     \item $n_i=1.35*10^{10}\approx 10^{10} cm^{-3}$
 \end{itemize}
+
+Note that this voltage difference can not be used to extract energy if there's no temperature difference. (The Second Law of Thermodynamics)
+
+\subsection{Law of Mass Action}
+In equilibrium:
+\begin{equation}
+    n_i^2=n*p
+\end{equation}
+where n and p are the electron and hole concentration of a doped semiconductor
+
+Generally, you dope it with either:
+\begin{itemize}
+    \item donor atoms, which causes it to become an n-type semiconductor
+
+If it's doped with donor atoms, with concentration $N_d>>n_i$, then $n\approx N_d$ and $p\approx \frac{n_i^2}{N_d}$
+
+    \item acceptor atoms, which causes it to become a p-type semiconductor
+
+        If it's doped with donor atoms, with concentration $N_a>>n_i$, then $p\approx N_a$ and $n\approx \frac{n_i^2}{N_a}$
+\end{itemize}
+
+\subsection{Capacitance across the depletion layer}
+Due to the build-up of charge across the depletion layer in reverse or zero bias (immobile as it may be), we can model this behaviour as a capactiance:
+\begin{align}
+    C_{t}=\frac{\epsilon A}{W_{dep}}\\
+    W_{dep}=\sqrt{\frac{2\epsilon}{q}(V_{bi}+V_{R})\big(\frac{1}{N_a}+\frac{1}{N_d}\big)}
+\end{align}
+where $\epsilon$ is Silicon's permittivity, $W_{dep}$ is the width of the depletion layer and $V_R$ is the external voltage applied in reverse bias
+
+
+\section{BJT and Biasing}
+
+
 \end{document}

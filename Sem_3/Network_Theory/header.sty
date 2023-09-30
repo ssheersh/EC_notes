@@ -1,0 +1,15 @@
+% Headers and other variables go here
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{header}
+
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{import}
+\RequirePackage{xifthen}
+\RequirePackage{pdfpages}
+\RequirePackage{transparent}
+
+\newcommand{\incfig}[1]{
+    \def\svgwidth{\columnwidth}
+    \import{./figures}{#1.pdf_tex}
+}
